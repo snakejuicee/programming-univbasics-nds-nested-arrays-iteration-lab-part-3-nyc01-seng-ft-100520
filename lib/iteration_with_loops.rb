@@ -5,5 +5,11 @@ def join_nested_strings(src)
     ic = 0 
     while ic < src[oc].length do
       if src[oc][ic].class == String
-        result +=
+        result + src[oc][ic] + " "
+      end
+      ic += 1
+    end
+    oc += 1
+  end
+  result
  end
